@@ -70,8 +70,14 @@ Outputs:
 - `artifacts/dagbench_workflows/ml_pipelines/gpt2_tensor_sh12_decode/*`
 
 `run_pipeline.py` also mirrors generated workflows into local DAGBench:
-- `C:\Users\bhask\codex\dagbench\workflows\ml_pipelines\gpt2_tensor_sh12_prefill`
-- `C:\Users\bhask\codex\dagbench\workflows\ml_pipelines\gpt2_tensor_sh12_decode`
+- `<dagbench_root>/workflows/ml_pipelines/gpt2_tensor_sh12_prefill`
+- `<dagbench_root>/workflows/ml_pipelines/gpt2_tensor_sh12_decode`
+
+Set the mirror target explicitly with:
+
+```powershell
+python run_pipeline.py --mirror-dagbench /path/to/dagbench/workflows
+```
 
 ## Multi-node deployment (split across nodes)
 
