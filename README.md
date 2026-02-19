@@ -1,5 +1,12 @@
 # gpt2-dag
 
+GPT-2 is an early decoder-only Transformer-based LLM and a predecessor to current-generation GPT models.
+For the original model details, see *Language Models are Unsupervised Multitask Learners* (Radford et al., 2019):
+https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+
+This repository is based on the Hugging Face GPT-2 implementation:
+https://github.com/huggingface/transformers/blob/main/src/transformers/models/gpt2/modeling_gpt2.py
+
 Tensor-DAG implementation of GPT-2 (Sh=12 shards/layer), with:
 - exact-functionality parity tests against Hugging Face GPT-2 code
 - measured compute and communication profiling via `dagprofiler`
@@ -119,13 +126,17 @@ python scripts/deploy_plan.py `
   --out artifacts/deployment/decode_saga_heft.json
 ```
 
-Supported SAGA schedulers in this repo:
-- `heft` (default)
-- `cpop`
-- `etf`
-- `minmin`
-- `met`
-- `bil`
+Scheduler support is dynamic:
+- Any scheduler class discoverable from your installed `saga.schedulers` package can be used.
+- You can also pass an explicit scheduler class path, e.g.:
+  - `--scheduler saga.schedulers.heft:HeftScheduler`
+  - `--scheduler mypkg.schedulers:MyCustomScheduler`
+
+List detected scheduler aliases:
+
+```powershell
+python scripts/deploy_plan.py --list-schedulers
+```
 
 ## What code is shipped to each node?
 
@@ -144,3 +155,5 @@ Worker dry-run example:
 $env:PYTHONPATH = "src"
 python -m gpt2_dag.worker_runtime --plan artifacts/deployment/decode_saga_heft.json --node rpi-a --dry-run
 ```
+
+Contributor: Bhaskar Krishnamachari (USC)
