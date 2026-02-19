@@ -1,0 +1,4831 @@
+{
+  "name": "ml.gpt2_tensor_sh12_prefill",
+  "task_graph": {
+    "tasks": [
+      {
+        "name": "embed",
+        "cost": 1.4936999650672078
+      },
+      {
+        "name": "qkv_00",
+        "cost": 19.7317999554798
+      },
+      {
+        "name": "attn_merge_00",
+        "cost": 6.673399941064417
+      },
+      {
+        "name": "attn_shard_00_0",
+        "cost": 0.8463000413030386
+      },
+      {
+        "name": "attn_shard_00_1",
+        "cost": 0.8501999545842409
+      },
+      {
+        "name": "attn_shard_00_2",
+        "cost": 0.8117998950183392
+      },
+      {
+        "name": "attn_shard_00_3",
+        "cost": 0.8397999918088317
+      },
+      {
+        "name": "attn_shard_00_4",
+        "cost": 0.6689999718219042
+      },
+      {
+        "name": "attn_shard_00_5",
+        "cost": 0.8221999742090702
+      },
+      {
+        "name": "attn_shard_00_6",
+        "cost": 0.8189999498426914
+      },
+      {
+        "name": "attn_shard_00_7",
+        "cost": 0.8125000167638063
+      },
+      {
+        "name": "attn_shard_00_8",
+        "cost": 0.8509999606758356
+      },
+      {
+        "name": "attn_shard_00_9",
+        "cost": 0.6298000225797296
+      },
+      {
+        "name": "attn_shard_00_10",
+        "cost": 0.7900000782683492
+      },
+      {
+        "name": "attn_shard_00_11",
+        "cost": 0.8164000464603305
+      },
+      {
+        "name": "mlp_merge_00",
+        "cost": 23.964199936017394
+      },
+      {
+        "name": "mlp_shard_00_0",
+        "cost": 2.8065000660717487
+      },
+      {
+        "name": "mlp_shard_00_1",
+        "cost": 2.590299933217466
+      },
+      {
+        "name": "mlp_shard_00_2",
+        "cost": 2.3200000869110227
+      },
+      {
+        "name": "mlp_shard_00_3",
+        "cost": 2.4748999858275056
+      },
+      {
+        "name": "mlp_shard_00_4",
+        "cost": 2.556900028139353
+      },
+      {
+        "name": "mlp_shard_00_5",
+        "cost": 2.51590006519109
+      },
+      {
+        "name": "mlp_shard_00_6",
+        "cost": 2.3132999194785953
+      },
+      {
+        "name": "mlp_shard_00_7",
+        "cost": 2.561699948273599
+      },
+      {
+        "name": "mlp_shard_00_8",
+        "cost": 2.615999896079302
+      },
+      {
+        "name": "mlp_shard_00_9",
+        "cost": 2.396399970166385
+      },
+      {
+        "name": "mlp_shard_00_10",
+        "cost": 2.5707000168040395
+      },
+      {
+        "name": "mlp_shard_00_11",
+        "cost": 2.55430000834167
+      },
+      {
+        "name": "qkv_01",
+        "cost": 19.52329999767244
+      },
+      {
+        "name": "attn_merge_01",
+        "cost": 6.494900095276535
+      },
+      {
+        "name": "attn_shard_01_0",
+        "cost": 0.982699915766716
+      },
+      {
+        "name": "attn_shard_01_1",
+        "cost": 0.8498999522998929
+      },
+      {
+        "name": "attn_shard_01_2",
+        "cost": 0.8402999956160784
+      },
+      {
+        "name": "attn_shard_01_3",
+        "cost": 0.8304999209940434
+      },
+      {
+        "name": "attn_shard_01_4",
+        "cost": 0.844599911943078
+      },
+      {
+        "name": "attn_shard_01_5",
+        "cost": 0.8679000893607736
+      },
+      {
+        "name": "attn_shard_01_6",
+        "cost": 0.8693999843671918
+      },
+      {
+        "name": "attn_shard_01_7",
+        "cost": 0.6005000323057175
+      },
+      {
+        "name": "attn_shard_01_8",
+        "cost": 0.8221999742090702
+      },
+      {
+        "name": "attn_shard_01_9",
+        "cost": 0.8369000861421227
+      },
+      {
+        "name": "attn_shard_01_10",
+        "cost": 0.8903000270947814
+      },
+      {
+        "name": "attn_shard_01_11",
+        "cost": 0.8177000563591719
+      },
+      {
+        "name": "mlp_merge_01",
+        "cost": 22.947699995711446
+      },
+      {
+        "name": "mlp_shard_01_0",
+        "cost": 2.9069000156596303
+      },
+      {
+        "name": "mlp_shard_01_1",
+        "cost": 2.6628999039530754
+      },
+      {
+        "name": "mlp_shard_01_2",
+        "cost": 1.9856999861076474
+      },
+      {
+        "name": "mlp_shard_01_3",
+        "cost": 2.3735000286251307
+      },
+      {
+        "name": "mlp_shard_01_4",
+        "cost": 2.755699912086129
+      },
+      {
+        "name": "mlp_shard_01_5",
+        "cost": 2.5234000058844686
+      },
+      {
+        "name": "mlp_shard_01_6",
+        "cost": 2.532099955715239
+      },
+      {
+        "name": "mlp_shard_01_7",
+        "cost": 2.4998000590130687
+      },
+      {
+        "name": "mlp_shard_01_8",
+        "cost": 1.8596999580040574
+      },
+      {
+        "name": "mlp_shard_01_9",
+        "cost": 2.566100098192692
+      },
+      {
+        "name": "mlp_shard_01_10",
+        "cost": 2.52920005004853
+      },
+      {
+        "name": "mlp_shard_01_11",
+        "cost": 2.7101999148726463
+      },
+      {
+        "name": "qkv_02",
+        "cost": 18.669300014153123
+      },
+      {
+        "name": "attn_merge_02",
+        "cost": 6.723199971020222
+      },
+      {
+        "name": "attn_shard_02_0",
+        "cost": 0.8676999714225531
+      },
+      {
+        "name": "attn_shard_02_1",
+        "cost": 0.9611999848857522
+      },
+      {
+        "name": "attn_shard_02_2",
+        "cost": 0.8446000283583999
+      },
+      {
+        "name": "attn_shard_02_3",
+        "cost": 0.8610000368207693
+      },
+      {
+        "name": "attn_shard_02_4",
+        "cost": 0.7489999989047647
+      },
+      {
+        "name": "attn_shard_02_5",
+        "cost": 0.7975000189617276
+      },
+      {
+        "name": "attn_shard_02_6",
+        "cost": 0.7209000177681446
+      },
+      {
+        "name": "attn_shard_02_7",
+        "cost": 0.8668000809848309
+      },
+      {
+        "name": "attn_shard_02_8",
+        "cost": 0.8036999497562647
+      },
+      {
+        "name": "attn_shard_02_9",
+        "cost": 0.8892999030649662
+      },
+      {
+        "name": "attn_shard_02_10",
+        "cost": 0.847300048917532
+      },
+      {
+        "name": "attn_shard_02_11",
+        "cost": 0.8494999492540956
+      },
+      {
+        "name": "mlp_merge_02",
+        "cost": 22.532799979671836
+      },
+      {
+        "name": "mlp_shard_02_0",
+        "cost": 2.7936999686062336
+      },
+      {
+        "name": "mlp_shard_02_1",
+        "cost": 2.638300065882504
+      },
+      {
+        "name": "mlp_shard_02_2",
+        "cost": 2.563800080679357
+      },
+      {
+        "name": "mlp_shard_02_3",
+        "cost": 2.507800003513694
+      },
+      {
+        "name": "mlp_shard_02_4",
+        "cost": 2.653099945746362
+      },
+      {
+        "name": "mlp_shard_02_5",
+        "cost": 2.5793000822886825
+      },
+      {
+        "name": "mlp_shard_02_6",
+        "cost": 2.5643999688327312
+      },
+      {
+        "name": "mlp_shard_02_7",
+        "cost": 2.6668000500649214
+      },
+      {
+        "name": "mlp_shard_02_8",
+        "cost": 2.603099914267659
+      },
+      {
+        "name": "mlp_shard_02_9",
+        "cost": 2.2413000697270036
+      },
+      {
+        "name": "mlp_shard_02_10",
+        "cost": 2.5177999632433057
+      },
+      {
+        "name": "mlp_shard_02_11",
+        "cost": 2.6669000508263707
+      },
+      {
+        "name": "qkv_03",
+        "cost": 18.086900003254414
+      },
+      {
+        "name": "attn_merge_03",
+        "cost": 6.349600036628544
+      },
+      {
+        "name": "attn_shard_03_0",
+        "cost": 0.8720000041648746
+      },
+      {
+        "name": "attn_shard_03_1",
+        "cost": 0.8452999172732234
+      },
+      {
+        "name": "attn_shard_03_2",
+        "cost": 0.8129999041557312
+      },
+      {
+        "name": "attn_shard_03_3",
+        "cost": 0.8448000298812985
+      },
+      {
+        "name": "attn_shard_03_4",
+        "cost": 0.8630999363958836
+      },
+      {
+        "name": "attn_shard_03_5",
+        "cost": 0.8835999760776758
+      },
+      {
+        "name": "attn_shard_03_6",
+        "cost": 0.8472999325022101
+      },
+      {
+        "name": "attn_shard_03_7",
+        "cost": 0.8187000639736652
+      },
+      {
+        "name": "attn_shard_03_8",
+        "cost": 0.8268000092357397
+      },
+      {
+        "name": "attn_shard_03_9",
+        "cost": 0.8559999987483025
+      },
+      {
+        "name": "attn_shard_03_10",
+        "cost": 0.8551999926567078
+      },
+      {
+        "name": "attn_shard_03_11",
+        "cost": 0.7386999204754829
+      },
+      {
+        "name": "mlp_merge_03",
+        "cost": 22.337600006721914
+      },
+      {
+        "name": "mlp_shard_03_0",
+        "cost": 2.857399987988174
+      },
+      {
+        "name": "mlp_shard_03_1",
+        "cost": 2.6103000855073333
+      },
+      {
+        "name": "mlp_shard_03_2",
+        "cost": 2.501899958588183
+      },
+      {
+        "name": "mlp_shard_03_3",
+        "cost": 2.5887000374495983
+      },
+      {
+        "name": "mlp_shard_03_4",
+        "cost": 2.864199923351407
+      },
+      {
+        "name": "mlp_shard_03_5",
+        "cost": 2.550500095821917
+      },
+      {
+        "name": "mlp_shard_03_6",
+        "cost": 2.5597000494599342
+      },
+      {
+        "name": "mlp_shard_03_7",
+        "cost": 2.572600031271577
+      },
+      {
+        "name": "mlp_shard_03_8",
+        "cost": 2.8282999992370605
+      },
+      {
+        "name": "mlp_shard_03_9",
+        "cost": 2.6140999980270863
+      },
+      {
+        "name": "mlp_shard_03_10",
+        "cost": 2.5788000784814358
+      },
+      {
+        "name": "mlp_shard_03_11",
+        "cost": 2.660700003616512
+      },
+      {
+        "name": "qkv_04",
+        "cost": 18.012500018812716
+      },
+      {
+        "name": "attn_merge_04",
+        "cost": 5.81540004350245
+      },
+      {
+        "name": "attn_shard_04_0",
+        "cost": 0.7769999792799354
+      },
+      {
+        "name": "attn_shard_04_1",
+        "cost": 0.8342999499291182
+      },
+      {
+        "name": "attn_shard_04_2",
+        "cost": 0.6413999944925308
+      },
+      {
+        "name": "attn_shard_04_3",
+        "cost": 0.9793000062927604
+      },
+      {
+        "name": "attn_shard_04_4",
+        "cost": 0.7839999161660671
+      },
+      {
+        "name": "attn_shard_04_5",
+        "cost": 0.8064999710768461
+      },
+      {
+        "name": "attn_shard_04_6",
+        "cost": 0.7215000223368406
+      },
+      {
+        "name": "attn_shard_04_7",
+        "cost": 0.8295000297948718
+      },
+      {
+        "name": "attn_shard_04_8",
+        "cost": 0.6534000858664513
+      },
+      {
+        "name": "attn_shard_04_9",
+        "cost": 0.8036000654101372
+      },
+      {
+        "name": "attn_shard_04_10",
+        "cost": 0.7897000759840012
+      },
+      {
+        "name": "attn_shard_04_11",
+        "cost": 0.8022000547498465
+      },
+      {
+        "name": "mlp_merge_04",
+        "cost": 22.309600026346743
+      },
+      {
+        "name": "mlp_shard_04_0",
+        "cost": 3.054399974644184
+      },
+      {
+        "name": "mlp_shard_04_1",
+        "cost": 2.747800084762275
+      },
+      {
+        "name": "mlp_shard_04_2",
+        "cost": 2.5949999690055847
+      },
+      {
+        "name": "mlp_shard_04_3",
+        "cost": 2.562499954365194
+      },
+      {
+        "name": "mlp_shard_04_4",
+        "cost": 2.6910000015050173
+      },
+      {
+        "name": "mlp_shard_04_5",
+        "cost": 2.7351999888196588
+      },
+      {
+        "name": "mlp_shard_04_6",
+        "cost": 2.6578999822959304
+      },
+      {
+        "name": "mlp_shard_04_7",
+        "cost": 2.663399907760322
+      },
+      {
+        "name": "mlp_shard_04_8",
+        "cost": 2.4781000101938844
+      },
+      {
+        "name": "mlp_shard_04_9",
+        "cost": 2.5964000960811973
+      },
+      {
+        "name": "mlp_shard_04_10",
+        "cost": 2.08170001860708
+      },
+      {
+        "name": "mlp_shard_04_11",
+        "cost": 2.625799970701337
+      },
+      {
+        "name": "qkv_05",
+        "cost": 18.12269992660731
+      },
+      {
+        "name": "attn_merge_05",
+        "cost": 6.364300032146275
+      },
+      {
+        "name": "attn_shard_05_0",
+        "cost": 0.8237999863922596
+      },
+      {
+        "name": "attn_shard_05_1",
+        "cost": 0.8044999558478594
+      },
+      {
+        "name": "attn_shard_05_2",
+        "cost": 0.9115999564528465
+      },
+      {
+        "name": "attn_shard_05_3",
+        "cost": 0.6873999955132604
+      },
+      {
+        "name": "attn_shard_05_4",
+        "cost": 0.9027000050991774
+      },
+      {
+        "name": "attn_shard_05_5",
+        "cost": 0.8348999544978142
+      },
+      {
+        "name": "attn_shard_05_6",
+        "cost": 0.7941999938338995
+      },
+      {
+        "name": "attn_shard_05_7",
+        "cost": 0.7828000234439969
+      },
+      {
+        "name": "attn_shard_05_8",
+        "cost": 0.8372999727725983
+      },
+      {
+        "name": "attn_shard_05_9",
+        "cost": 0.7060000207275152
+      },
+      {
+        "name": "attn_shard_05_10",
+        "cost": 0.8669000817462802
+      },
+      {
+        "name": "attn_shard_05_11",
+        "cost": 0.813600025139749
+      },
+      {
+        "name": "mlp_merge_05",
+        "cost": 23.896500002592802
+      },
+      {
+        "name": "mlp_shard_05_0",
+        "cost": 2.5531999999657273
+      },
+      {
+        "name": "mlp_shard_05_1",
+        "cost": 2.5682999985292554
+      },
+      {
+        "name": "mlp_shard_05_2",
+        "cost": 2.5318999541923404
+      },
+      {
+        "name": "mlp_shard_05_3",
+        "cost": 2.6570999762043357
+      },
+      {
+        "name": "mlp_shard_05_4",
+        "cost": 2.4864000733941793
+      },
+      {
+        "name": "mlp_shard_05_5",
+        "cost": 2.4662999203428626
+      },
+      {
+        "name": "mlp_shard_05_6",
+        "cost": 2.6485000271350145
+      },
+      {
+        "name": "mlp_shard_05_7",
+        "cost": 2.685600076802075
+      },
+      {
+        "name": "mlp_shard_05_8",
+        "cost": 2.572900033555925
+      },
+      {
+        "name": "mlp_shard_05_9",
+        "cost": 2.5795999681577086
+      },
+      {
+        "name": "mlp_shard_05_10",
+        "cost": 2.400000113993883
+      },
+      {
+        "name": "mlp_shard_05_11",
+        "cost": 2.514299936592579
+      },
+      {
+        "name": "qkv_06",
+        "cost": 18.768300069496036
+      },
+      {
+        "name": "attn_merge_06",
+        "cost": 6.051599979400635
+      },
+      {
+        "name": "attn_shard_06_0",
+        "cost": 0.8546999888494611
+      },
+      {
+        "name": "attn_shard_06_1",
+        "cost": 0.8276000153273344
+      },
+      {
+        "name": "attn_shard_06_2",
+        "cost": 0.9008999913930893
+      },
+      {
+        "name": "attn_shard_06_3",
+        "cost": 0.8762999204918742
+      },
+      {
+        "name": "attn_shard_06_4",
+        "cost": 0.8231999818235636
+      },
+      {
+        "name": "attn_shard_06_5",
+        "cost": 0.6752000190317631
+      },
+      {
+        "name": "attn_shard_06_6",
+        "cost": 0.8780000498518348
+      },
+      {
+        "name": "attn_shard_06_7",
+        "cost": 0.8770999265834689
+      },
+      {
+        "name": "attn_shard_06_8",
+        "cost": 0.8447000291198492
+      },
+      {
+        "name": "attn_shard_06_9",
+        "cost": 0.6656999466940761
+      },
+      {
+        "name": "attn_shard_06_10",
+        "cost": 0.8632000535726547
+      },
+      {
+        "name": "attn_shard_06_11",
+        "cost": 0.8190000662580132
+      },
+      {
+        "name": "mlp_merge_06",
+        "cost": 23.038099985569715
+      },
+      {
+        "name": "mlp_shard_06_0",
+        "cost": 2.8453998966142535
+      },
+      {
+        "name": "mlp_shard_06_1",
+        "cost": 2.769000013358891
+      },
+      {
+        "name": "mlp_shard_06_2",
+        "cost": 2.5614999467507005
+      },
+      {
+        "name": "mlp_shard_06_3",
+        "cost": 2.2778999991714954
+      },
+      {
+        "name": "mlp_shard_06_4",
+        "cost": 2.422700054012239
+      },
+      {
+        "name": "mlp_shard_06_5",
+        "cost": 2.665399922989309
+      },
+      {
+        "name": "mlp_shard_06_6",
+        "cost": 2.5729999179020524
+      },
+      {
+        "name": "mlp_shard_06_7",
+        "cost": 2.5998998899012804
+      },
+      {
+        "name": "mlp_shard_06_8",
+        "cost": 1.9429000094532967
+      },
+      {
+        "name": "mlp_shard_06_9",
+        "cost": 2.5897000450640917
+      },
+      {
+        "name": "mlp_shard_06_10",
+        "cost": 2.6247999630868435
+      },
+      {
+        "name": "mlp_shard_06_11",
+        "cost": 2.839999971911311
+      },
+      {
+        "name": "qkv_07",
+        "cost": 18.381500034593046
+      },
+      {
+        "name": "attn_merge_07",
+        "cost": 5.975899985060096
+      },
+      {
+        "name": "attn_shard_07_0",
+        "cost": 0.8490999462082982
+      },
+      {
+        "name": "attn_shard_07_1",
+        "cost": 0.6730000022798777
+      },
+      {
+        "name": "attn_shard_07_2",
+        "cost": 0.848800060339272
+      },
+      {
+        "name": "attn_shard_07_3",
+        "cost": 0.8293999126181006
+      },
+      {
+        "name": "attn_shard_07_4",
+        "cost": 0.7429000688716769
+      },
+      {
+        "name": "attn_shard_07_5",
+        "cost": 0.8611000375822186
+      },
+      {
+        "name": "attn_shard_07_6",
+        "cost": 0.5763000808656216
+      },
+      {
+        "name": "attn_shard_07_7",
+        "cost": 0.7335999980568886
+      },
+      {
+        "name": "attn_shard_07_8",
+        "cost": 0.6111999973654747
+      },
+      {
+        "name": "attn_shard_07_9",
+        "cost": 0.7842999184504151
+      },
+      {
+        "name": "attn_shard_07_10",
+        "cost": 0.8365000830963254
+      },
+      {
+        "name": "attn_shard_07_11",
+        "cost": 0.7357000140473247
+      },
+      {
+        "name": "mlp_merge_07",
+        "cost": 21.928800037130713
+      },
+      {
+        "name": "mlp_shard_07_0",
+        "cost": 2.7308999560773373
+      },
+      {
+        "name": "mlp_shard_07_1",
+        "cost": 2.4389999452978373
+      },
+      {
+        "name": "mlp_shard_07_2",
+        "cost": 2.533600083552301
+      },
+      {
+        "name": "mlp_shard_07_3",
+        "cost": 2.740600029937923
+      },
+      {
+        "name": "mlp_shard_07_4",
+        "cost": 2.469399943947792
+      },
+      {
+        "name": "mlp_shard_07_5",
+        "cost": 2.5652999756857753
+      },
+      {
+        "name": "mlp_shard_07_6",
+        "cost": 2.620200044475496
+      },
+      {
+        "name": "mlp_shard_07_7",
+        "cost": 2.58969992864877
+      },
+      {
+        "name": "mlp_shard_07_8",
+        "cost": 2.61049997061491
+      },
+      {
+        "name": "mlp_shard_07_9",
+        "cost": 2.5667999871075153
+      },
+      {
+        "name": "mlp_shard_07_10",
+        "cost": 2.4997000582516193
+      },
+      {
+        "name": "mlp_shard_07_11",
+        "cost": 2.47119995765388
+      },
+      {
+        "name": "qkv_08",
+        "cost": 18.348399898968637
+      },
+      {
+        "name": "attn_merge_08",
+        "cost": 6.4573000418022275
+      },
+      {
+        "name": "attn_shard_08_0",
+        "cost": 0.7965000113472342
+      },
+      {
+        "name": "attn_shard_08_1",
+        "cost": 0.8390999864786863
+      },
+      {
+        "name": "attn_shard_08_2",
+        "cost": 0.7983999093994498
+      },
+      {
+        "name": "attn_shard_08_3",
+        "cost": 0.598000013269484
+      },
+      {
+        "name": "attn_shard_08_4",
+        "cost": 0.6439000135287642
+      },
+      {
+        "name": "attn_shard_08_5",
+        "cost": 0.7906999671831727
+      },
+      {
+        "name": "attn_shard_08_6",
+        "cost": 0.6148000247776508
+      },
+      {
+        "name": "attn_shard_08_7",
+        "cost": 0.8008000440895557
+      },
+      {
+        "name": "attn_shard_08_8",
+        "cost": 0.6102999905124307
+      },
+      {
+        "name": "attn_shard_08_9",
+        "cost": 0.8267000084742904
+      },
+      {
+        "name": "attn_shard_08_10",
+        "cost": 0.8256000000983477
+      },
+      {
+        "name": "attn_shard_08_11",
+        "cost": 0.8582000155001879
+      },
+      {
+        "name": "mlp_merge_08",
+        "cost": 22.239499958232045
+      },
+      {
+        "name": "mlp_shard_08_0",
+        "cost": 2.4802000261843204
+      },
+      {
+        "name": "mlp_shard_08_1",
+        "cost": 2.3761000484228134
+      },
+      {
+        "name": "mlp_shard_08_2",
+        "cost": 2.490699989721179
+      },
+      {
+        "name": "mlp_shard_08_3",
+        "cost": 2.5080000050365925
+      },
+      {
+        "name": "mlp_shard_08_4",
+        "cost": 2.7062000008299947
+      },
+      {
+        "name": "mlp_shard_08_5",
+        "cost": 2.6011000154539943
+      },
+      {
+        "name": "mlp_shard_08_6",
+        "cost": 2.55279999691993
+      },
+      {
+        "name": "mlp_shard_08_7",
+        "cost": 2.296999911777675
+      },
+      {
+        "name": "mlp_shard_08_8",
+        "cost": 2.1743999095633626
+      },
+      {
+        "name": "mlp_shard_08_9",
+        "cost": 1.7989000771194696
+      },
+      {
+        "name": "mlp_shard_08_10",
+        "cost": 2.4465000024065375
+      },
+      {
+        "name": "mlp_shard_08_11",
+        "cost": 2.546899951994419
+      },
+      {
+        "name": "qkv_09",
+        "cost": 18.729300005361438
+      },
+      {
+        "name": "attn_merge_09",
+        "cost": 6.266899988986552
+      },
+      {
+        "name": "attn_shard_09_0",
+        "cost": 0.852599972859025
+      },
+      {
+        "name": "attn_shard_09_1",
+        "cost": 0.8486999431625009
+      },
+      {
+        "name": "attn_shard_09_2",
+        "cost": 0.9268999565392733
+      },
+      {
+        "name": "attn_shard_09_3",
+        "cost": 0.964400009252131
+      },
+      {
+        "name": "attn_shard_09_4",
+        "cost": 1.0070999851450324
+      },
+      {
+        "name": "attn_shard_09_5",
+        "cost": 0.8582000155001879
+      },
+      {
+        "name": "attn_shard_09_6",
+        "cost": 0.7796999998390675
+      },
+      {
+        "name": "attn_shard_09_7",
+        "cost": 0.8682000916451216
+      },
+      {
+        "name": "attn_shard_09_8",
+        "cost": 0.9093999397009611
+      },
+      {
+        "name": "attn_shard_09_9",
+        "cost": 0.8993999799713492
+      },
+      {
+        "name": "attn_shard_09_10",
+        "cost": 0.7257999386638403
+      },
+      {
+        "name": "attn_shard_09_11",
+        "cost": 0.873900018632412
+      },
+      {
+        "name": "mlp_merge_09",
+        "cost": 22.007500054314733
+      },
+      {
+        "name": "mlp_shard_09_0",
+        "cost": 2.8415999840945005
+      },
+      {
+        "name": "mlp_shard_09_1",
+        "cost": 2.462900010868907
+      },
+      {
+        "name": "mlp_shard_09_2",
+        "cost": 2.498399931937456
+      },
+      {
+        "name": "mlp_shard_09_3",
+        "cost": 2.59719998575747
+      },
+      {
+        "name": "mlp_shard_09_4",
+        "cost": 2.5960999773815274
+      },
+      {
+        "name": "mlp_shard_09_5",
+        "cost": 2.537099993787706
+      },
+      {
+        "name": "mlp_shard_09_6",
+        "cost": 2.4935000110417604
+      },
+      {
+        "name": "mlp_shard_09_7",
+        "cost": 2.665499923750758
+      },
+      {
+        "name": "mlp_shard_09_8",
+        "cost": 2.5690000038594007
+      },
+      {
+        "name": "mlp_shard_09_9",
+        "cost": 2.5008999509736896
+      },
+      {
+        "name": "mlp_shard_09_10",
+        "cost": 2.6685999473556876
+      },
+      {
+        "name": "mlp_shard_09_11",
+        "cost": 2.478600014001131
+      },
+      {
+        "name": "qkv_10",
+        "cost": 18.027600017376244
+      },
+      {
+        "name": "attn_merge_10",
+        "cost": 5.7610999792814255
+      },
+      {
+        "name": "attn_shard_10_0",
+        "cost": 0.5897999508306384
+      },
+      {
+        "name": "attn_shard_10_1",
+        "cost": 0.8519000839442015
+      },
+      {
+        "name": "attn_shard_10_2",
+        "cost": 0.6524999625980854
+      },
+      {
+        "name": "attn_shard_10_3",
+        "cost": 0.8989000925794244
+      },
+      {
+        "name": "attn_shard_10_4",
+        "cost": 0.7854000432416797
+      },
+      {
+        "name": "attn_shard_10_5",
+        "cost": 0.8348999544978142
+      },
+      {
+        "name": "attn_shard_10_6",
+        "cost": 0.8581000147387385
+      },
+      {
+        "name": "attn_shard_10_7",
+        "cost": 0.840199994854629
+      },
+      {
+        "name": "attn_shard_10_8",
+        "cost": 0.8651000680401921
+      },
+      {
+        "name": "attn_shard_10_9",
+        "cost": 0.8388999849557877
+      },
+      {
+        "name": "attn_shard_10_10",
+        "cost": 0.8014000486582518
+      },
+      {
+        "name": "attn_shard_10_11",
+        "cost": 0.8518999675288796
+      },
+      {
+        "name": "mlp_merge_10",
+        "cost": 23.29979999922216
+      },
+      {
+        "name": "mlp_shard_10_0",
+        "cost": 2.6473000179976225
+      },
+      {
+        "name": "mlp_shard_10_1",
+        "cost": 2.5074000004678965
+      },
+      {
+        "name": "mlp_shard_10_2",
+        "cost": 2.7235999004915357
+      },
+      {
+        "name": "mlp_shard_10_3",
+        "cost": 2.759200055152178
+      },
+      {
+        "name": "mlp_shard_10_4",
+        "cost": 2.643599989823997
+      },
+      {
+        "name": "mlp_shard_10_5",
+        "cost": 2.6897999923676252
+      },
+      {
+        "name": "mlp_shard_10_6",
+        "cost": 2.610799972899258
+      },
+      {
+        "name": "mlp_shard_10_7",
+        "cost": 2.8117999900132418
+      },
+      {
+        "name": "mlp_shard_10_8",
+        "cost": 2.7700000209733844
+      },
+      {
+        "name": "mlp_shard_10_9",
+        "cost": 2.3751999251544476
+      },
+      {
+        "name": "mlp_shard_10_10",
+        "cost": 2.5262999115511775
+      },
+      {
+        "name": "mlp_shard_10_11",
+        "cost": 2.2097000619396567
+      },
+      {
+        "name": "qkv_11",
+        "cost": 17.16739998664707
+      },
+      {
+        "name": "attn_merge_11",
+        "cost": 6.393600022420287
+      },
+      {
+        "name": "attn_shard_11_0",
+        "cost": 0.833700061775744
+      },
+      {
+        "name": "attn_shard_11_1",
+        "cost": 0.7863000500947237
+      },
+      {
+        "name": "attn_shard_11_2",
+        "cost": 0.8066999725997448
+      },
+      {
+        "name": "attn_shard_11_3",
+        "cost": 0.8987999754026532
+      },
+      {
+        "name": "attn_shard_11_4",
+        "cost": 0.8495999500155449
+      },
+      {
+        "name": "attn_shard_11_5",
+        "cost": 0.8840999798849225
+      },
+      {
+        "name": "attn_shard_11_6",
+        "cost": 0.8682999759912491
+      },
+      {
+        "name": "attn_shard_11_7",
+        "cost": 0.5996000254526734
+      },
+      {
+        "name": "attn_shard_11_8",
+        "cost": 0.7794999983161688
+      },
+      {
+        "name": "attn_shard_11_9",
+        "cost": 0.6850999779999256
+      },
+      {
+        "name": "attn_shard_11_10",
+        "cost": 0.5882000550627708
+      },
+      {
+        "name": "attn_shard_11_11",
+        "cost": 0.8494999492540956
+      },
+      {
+        "name": "mlp_merge_11",
+        "cost": 23.053399985656142
+      },
+      {
+        "name": "mlp_shard_11_0",
+        "cost": 2.3468000581488013
+      },
+      {
+        "name": "mlp_shard_11_1",
+        "cost": 2.6172000216320157
+      },
+      {
+        "name": "mlp_shard_11_2",
+        "cost": 2.5123999221250415
+      },
+      {
+        "name": "mlp_shard_11_3",
+        "cost": 2.70990002900362
+      },
+      {
+        "name": "mlp_shard_11_4",
+        "cost": 2.59300007019192
+      },
+      {
+        "name": "mlp_shard_11_5",
+        "cost": 2.4938000133261085
+      },
+      {
+        "name": "mlp_shard_11_6",
+        "cost": 2.5388000067323446
+      },
+      {
+        "name": "mlp_shard_11_7",
+        "cost": 2.431600005365908
+      },
+      {
+        "name": "mlp_shard_11_8",
+        "cost": 2.642999985255301
+      },
+      {
+        "name": "mlp_shard_11_9",
+        "cost": 2.605099929496646
+      },
+      {
+        "name": "mlp_shard_11_10",
+        "cost": 2.560799941420555
+      },
+      {
+        "name": "mlp_shard_11_11",
+        "cost": 2.350199967622757
+      },
+      {
+        "name": "ln_f",
+        "cost": 0.1962999813258648
+      },
+      {
+        "name": "lm_head",
+        "cost": 366.8168999720365
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "embed",
+        "target": "qkv_00",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_merge_00",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_00",
+        "target": "attn_shard_00_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_00_0",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_00_1",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_00_2",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_00_3",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_00_4",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_00_5",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_00_6",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_00_7",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_00_8",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_00_9",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_00_10",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_00_11",
+        "target": "attn_merge_00",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_merge_00",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_00",
+        "target": "mlp_shard_00_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_00_0",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_00_1",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_00_2",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_00_3",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_00_4",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_00_5",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_00_6",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_00_7",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_00_8",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_00_9",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_00_10",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_00_11",
+        "target": "mlp_merge_00",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_00",
+        "target": "qkv_01",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_merge_01",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_01",
+        "target": "attn_shard_01_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_01_0",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_01_1",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_01_2",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_01_3",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_01_4",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_01_5",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_01_6",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_01_7",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_01_8",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_01_9",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_01_10",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_01_11",
+        "target": "attn_merge_01",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_merge_01",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_01",
+        "target": "mlp_shard_01_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_01_0",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_01_1",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_01_2",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_01_3",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_01_4",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_01_5",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_01_6",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_01_7",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_01_8",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_01_9",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_01_10",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_01_11",
+        "target": "mlp_merge_01",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_01",
+        "target": "qkv_02",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_merge_02",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_02",
+        "target": "attn_shard_02_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_02_0",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_02_1",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_02_2",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_02_3",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_02_4",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_02_5",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_02_6",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_02_7",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_02_8",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_02_9",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_02_10",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_02_11",
+        "target": "attn_merge_02",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_merge_02",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_02",
+        "target": "mlp_shard_02_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_02_0",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_02_1",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_02_2",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_02_3",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_02_4",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_02_5",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_02_6",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_02_7",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_02_8",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_02_9",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_02_10",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_02_11",
+        "target": "mlp_merge_02",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_02",
+        "target": "qkv_03",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_merge_03",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_03",
+        "target": "attn_shard_03_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_03_0",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_03_1",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_03_2",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_03_3",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_03_4",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_03_5",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_03_6",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_03_7",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_03_8",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_03_9",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_03_10",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_03_11",
+        "target": "attn_merge_03",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_merge_03",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_03",
+        "target": "mlp_shard_03_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_03_0",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_03_1",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_03_2",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_03_3",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_03_4",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_03_5",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_03_6",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_03_7",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_03_8",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_03_9",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_03_10",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_03_11",
+        "target": "mlp_merge_03",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_03",
+        "target": "qkv_04",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_merge_04",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_04",
+        "target": "attn_shard_04_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_04_0",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_04_1",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_04_2",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_04_3",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_04_4",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_04_5",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_04_6",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_04_7",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_04_8",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_04_9",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_04_10",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_04_11",
+        "target": "attn_merge_04",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_merge_04",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_04",
+        "target": "mlp_shard_04_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_04_0",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_04_1",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_04_2",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_04_3",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_04_4",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_04_5",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_04_6",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_04_7",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_04_8",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_04_9",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_04_10",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_04_11",
+        "target": "mlp_merge_04",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_04",
+        "target": "qkv_05",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_merge_05",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_05",
+        "target": "attn_shard_05_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_05_0",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_05_1",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_05_2",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_05_3",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_05_4",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_05_5",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_05_6",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_05_7",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_05_8",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_05_9",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_05_10",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_05_11",
+        "target": "attn_merge_05",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_merge_05",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_05",
+        "target": "mlp_shard_05_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_05_0",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_05_1",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_05_2",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_05_3",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_05_4",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_05_5",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_05_6",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_05_7",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_05_8",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_05_9",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_05_10",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_05_11",
+        "target": "mlp_merge_05",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_05",
+        "target": "qkv_06",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_merge_06",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_06",
+        "target": "attn_shard_06_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_06_0",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_06_1",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_06_2",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_06_3",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_06_4",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_06_5",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_06_6",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_06_7",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_06_8",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_06_9",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_06_10",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_06_11",
+        "target": "attn_merge_06",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_merge_06",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_06",
+        "target": "mlp_shard_06_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_06_0",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_06_1",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_06_2",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_06_3",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_06_4",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_06_5",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_06_6",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_06_7",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_06_8",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_06_9",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_06_10",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_06_11",
+        "target": "mlp_merge_06",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_06",
+        "target": "qkv_07",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_merge_07",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_07",
+        "target": "attn_shard_07_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_07_0",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_07_1",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_07_2",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_07_3",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_07_4",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_07_5",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_07_6",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_07_7",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_07_8",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_07_9",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_07_10",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_07_11",
+        "target": "attn_merge_07",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_merge_07",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_07",
+        "target": "mlp_shard_07_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_07_0",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_07_1",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_07_2",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_07_3",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_07_4",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_07_5",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_07_6",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_07_7",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_07_8",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_07_9",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_07_10",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_07_11",
+        "target": "mlp_merge_07",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_07",
+        "target": "qkv_08",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_merge_08",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_08",
+        "target": "attn_shard_08_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_08_0",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_08_1",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_08_2",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_08_3",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_08_4",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_08_5",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_08_6",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_08_7",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_08_8",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_08_9",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_08_10",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_08_11",
+        "target": "attn_merge_08",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_merge_08",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_08",
+        "target": "mlp_shard_08_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_08_0",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_08_1",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_08_2",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_08_3",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_08_4",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_08_5",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_08_6",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_08_7",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_08_8",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_08_9",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_08_10",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_08_11",
+        "target": "mlp_merge_08",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_08",
+        "target": "qkv_09",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_merge_09",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_09",
+        "target": "attn_shard_09_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_09_0",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_09_1",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_09_2",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_09_3",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_09_4",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_09_5",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_09_6",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_09_7",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_09_8",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_09_9",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_09_10",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_09_11",
+        "target": "attn_merge_09",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_merge_09",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_09",
+        "target": "mlp_shard_09_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_09_0",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_09_1",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_09_2",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_09_3",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_09_4",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_09_5",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_09_6",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_09_7",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_09_8",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_09_9",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_09_10",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_09_11",
+        "target": "mlp_merge_09",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_09",
+        "target": "qkv_10",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_merge_10",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_10",
+        "target": "attn_shard_10_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_10_0",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_10_1",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_10_2",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_10_3",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_10_4",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_10_5",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_10_6",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_10_7",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_10_8",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_10_9",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_10_10",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_10_11",
+        "target": "attn_merge_10",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_merge_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_10",
+        "target": "mlp_shard_10_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_10_0",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_10_1",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_10_2",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_10_3",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_10_4",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_10_5",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_10_6",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_10_7",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_10_8",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_10_9",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_10_10",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_10_11",
+        "target": "mlp_merge_10",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_10",
+        "target": "qkv_11",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_merge_11",
+        "size": 393636.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_0",
+        "size": 1967355.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_1",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_2",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_3",
+        "size": 1967357.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_4",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_5",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_6",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_7",
+        "size": 1967358.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_8",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_9",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_10",
+        "size": 1967362.0
+      },
+      {
+        "source": "qkv_11",
+        "target": "attn_shard_11_11",
+        "size": 1967362.0
+      },
+      {
+        "source": "attn_shard_11_0",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_11_1",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_11_2",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_11_3",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_11_4",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_11_5",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_11_6",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_11_7",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_11_8",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_11_9",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_11_10",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_shard_11_11",
+        "target": "attn_merge_11",
+        "size": 33180.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_merge_11",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_0",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_1",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_2",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_3",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_4",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_5",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_6",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_7",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_8",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_9",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_10",
+        "size": 393636.0
+      },
+      {
+        "source": "attn_merge_11",
+        "target": "mlp_shard_11_11",
+        "size": 393636.0
+      },
+      {
+        "source": "mlp_shard_11_0",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_11_1",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_11_2",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_11_3",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_11_4",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_11_5",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_11_6",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_11_7",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_11_8",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_11_9",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_11_10",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_shard_11_11",
+        "target": "mlp_merge_11",
+        "size": 131488.0
+      },
+      {
+        "source": "mlp_merge_11",
+        "target": "ln_f",
+        "size": 393636.0
+      },
+      {
+        "source": "ln_f",
+        "target": "lm_head",
+        "size": 393636.0
+      }
+    ]
+  },
+  "network": {
+    "nodes": [
+      {
+        "name": "N0",
+        "speed": 1.0
+      },
+      {
+        "name": "N1",
+        "speed": 1.0
+      },
+      {
+        "name": "N2",
+        "speed": 1.0
+      },
+      {
+        "name": "N3",
+        "speed": 1.0
+      },
+      {
+        "name": "N4",
+        "speed": 1.0
+      },
+      {
+        "name": "N5",
+        "speed": 1.0
+      },
+      {
+        "name": "N6",
+        "speed": 1.0
+      },
+      {
+        "name": "N7",
+        "speed": 1.0
+      },
+      {
+        "name": "N8",
+        "speed": 1.0
+      },
+      {
+        "name": "N9",
+        "speed": 1.0
+      },
+      {
+        "name": "N10",
+        "speed": 1.0
+      },
+      {
+        "name": "N11",
+        "speed": 1.0
+      }
+    ],
+    "edges": [
+      {
+        "source": "N0",
+        "target": "N0",
+        "speed": 1000000000.0
+      },
+      {
+        "source": "N0",
+        "target": "N1",
+        "speed": 500.0
+      },
+      {
+        "source": "N0",
+        "target": "N2",
+        "speed": 500.0
+      },
+      {
+        "source": "N0",
+        "target": "N3",
+        "speed": 500.0
+      },
+      {
+        "source": "N0",
+        "target": "N4",
+        "speed": 500.0
+      },
+      {
+        "source": "N0",
+        "target": "N5",
+        "speed": 500.0
+      },
+      {
+        "source": "N0",
+        "target": "N6",
+        "speed": 500.0
+      },
+      {
+        "source": "N0",
+        "target": "N7",
+        "speed": 500.0
+      },
+      {
+        "source": "N0",
+        "target": "N8",
+        "speed": 500.0
+      },
+      {
+        "source": "N0",
+        "target": "N9",
+        "speed": 500.0
+      },
+      {
+        "source": "N0",
+        "target": "N10",
+        "speed": 500.0
+      },
+      {
+        "source": "N0",
+        "target": "N11",
+        "speed": 500.0
+      },
+      {
+        "source": "N1",
+        "target": "N1",
+        "speed": 1000000000.0
+      },
+      {
+        "source": "N1",
+        "target": "N2",
+        "speed": 500.0
+      },
+      {
+        "source": "N1",
+        "target": "N3",
+        "speed": 500.0
+      },
+      {
+        "source": "N1",
+        "target": "N4",
+        "speed": 500.0
+      },
+      {
+        "source": "N1",
+        "target": "N5",
+        "speed": 500.0
+      },
+      {
+        "source": "N1",
+        "target": "N6",
+        "speed": 500.0
+      },
+      {
+        "source": "N1",
+        "target": "N7",
+        "speed": 500.0
+      },
+      {
+        "source": "N1",
+        "target": "N8",
+        "speed": 500.0
+      },
+      {
+        "source": "N1",
+        "target": "N9",
+        "speed": 500.0
+      },
+      {
+        "source": "N1",
+        "target": "N10",
+        "speed": 500.0
+      },
+      {
+        "source": "N1",
+        "target": "N11",
+        "speed": 500.0
+      },
+      {
+        "source": "N2",
+        "target": "N2",
+        "speed": 1000000000.0
+      },
+      {
+        "source": "N2",
+        "target": "N3",
+        "speed": 500.0
+      },
+      {
+        "source": "N2",
+        "target": "N4",
+        "speed": 500.0
+      },
+      {
+        "source": "N2",
+        "target": "N5",
+        "speed": 500.0
+      },
+      {
+        "source": "N2",
+        "target": "N6",
+        "speed": 500.0
+      },
+      {
+        "source": "N2",
+        "target": "N7",
+        "speed": 500.0
+      },
+      {
+        "source": "N2",
+        "target": "N8",
+        "speed": 500.0
+      },
+      {
+        "source": "N2",
+        "target": "N9",
+        "speed": 500.0
+      },
+      {
+        "source": "N2",
+        "target": "N10",
+        "speed": 500.0
+      },
+      {
+        "source": "N2",
+        "target": "N11",
+        "speed": 500.0
+      },
+      {
+        "source": "N3",
+        "target": "N3",
+        "speed": 1000000000.0
+      },
+      {
+        "source": "N3",
+        "target": "N4",
+        "speed": 500.0
+      },
+      {
+        "source": "N3",
+        "target": "N5",
+        "speed": 500.0
+      },
+      {
+        "source": "N3",
+        "target": "N6",
+        "speed": 500.0
+      },
+      {
+        "source": "N3",
+        "target": "N7",
+        "speed": 500.0
+      },
+      {
+        "source": "N3",
+        "target": "N8",
+        "speed": 500.0
+      },
+      {
+        "source": "N3",
+        "target": "N9",
+        "speed": 500.0
+      },
+      {
+        "source": "N3",
+        "target": "N10",
+        "speed": 500.0
+      },
+      {
+        "source": "N3",
+        "target": "N11",
+        "speed": 500.0
+      },
+      {
+        "source": "N4",
+        "target": "N4",
+        "speed": 1000000000.0
+      },
+      {
+        "source": "N4",
+        "target": "N5",
+        "speed": 500.0
+      },
+      {
+        "source": "N4",
+        "target": "N6",
+        "speed": 500.0
+      },
+      {
+        "source": "N4",
+        "target": "N7",
+        "speed": 500.0
+      },
+      {
+        "source": "N4",
+        "target": "N8",
+        "speed": 500.0
+      },
+      {
+        "source": "N4",
+        "target": "N9",
+        "speed": 500.0
+      },
+      {
+        "source": "N4",
+        "target": "N10",
+        "speed": 500.0
+      },
+      {
+        "source": "N4",
+        "target": "N11",
+        "speed": 500.0
+      },
+      {
+        "source": "N5",
+        "target": "N5",
+        "speed": 1000000000.0
+      },
+      {
+        "source": "N5",
+        "target": "N6",
+        "speed": 500.0
+      },
+      {
+        "source": "N5",
+        "target": "N7",
+        "speed": 500.0
+      },
+      {
+        "source": "N5",
+        "target": "N8",
+        "speed": 500.0
+      },
+      {
+        "source": "N5",
+        "target": "N9",
+        "speed": 500.0
+      },
+      {
+        "source": "N5",
+        "target": "N10",
+        "speed": 500.0
+      },
+      {
+        "source": "N5",
+        "target": "N11",
+        "speed": 500.0
+      },
+      {
+        "source": "N6",
+        "target": "N6",
+        "speed": 1000000000.0
+      },
+      {
+        "source": "N6",
+        "target": "N7",
+        "speed": 500.0
+      },
+      {
+        "source": "N6",
+        "target": "N8",
+        "speed": 500.0
+      },
+      {
+        "source": "N6",
+        "target": "N9",
+        "speed": 500.0
+      },
+      {
+        "source": "N6",
+        "target": "N10",
+        "speed": 500.0
+      },
+      {
+        "source": "N6",
+        "target": "N11",
+        "speed": 500.0
+      },
+      {
+        "source": "N7",
+        "target": "N7",
+        "speed": 1000000000.0
+      },
+      {
+        "source": "N7",
+        "target": "N8",
+        "speed": 500.0
+      },
+      {
+        "source": "N7",
+        "target": "N9",
+        "speed": 500.0
+      },
+      {
+        "source": "N7",
+        "target": "N10",
+        "speed": 500.0
+      },
+      {
+        "source": "N7",
+        "target": "N11",
+        "speed": 500.0
+      },
+      {
+        "source": "N8",
+        "target": "N8",
+        "speed": 1000000000.0
+      },
+      {
+        "source": "N8",
+        "target": "N9",
+        "speed": 500.0
+      },
+      {
+        "source": "N8",
+        "target": "N10",
+        "speed": 500.0
+      },
+      {
+        "source": "N8",
+        "target": "N11",
+        "speed": 500.0
+      },
+      {
+        "source": "N9",
+        "target": "N9",
+        "speed": 1000000000.0
+      },
+      {
+        "source": "N9",
+        "target": "N10",
+        "speed": 500.0
+      },
+      {
+        "source": "N9",
+        "target": "N11",
+        "speed": 500.0
+      },
+      {
+        "source": "N10",
+        "target": "N10",
+        "speed": 1000000000.0
+      },
+      {
+        "source": "N10",
+        "target": "N11",
+        "speed": 500.0
+      },
+      {
+        "source": "N11",
+        "target": "N11",
+        "speed": 1000000000.0
+      }
+    ]
+  }
+}

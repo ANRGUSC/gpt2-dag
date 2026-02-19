@@ -1,0 +1,51 @@
+id: ml.gpt2_tensor_sh12_decode
+name: GPT-2 Tensor DAG Sh12 Decode
+description: 'Decode phase for GPT-2 request handling: generate one token using existing
+  KV cache. This workflow is intended to be repeated for each generated token. GPT-2
+  tensor DAG with Sh=12 shards per transformer layer. Task costs are measured compute_time_ms
+  from dagprofiler; dependency sizes are measured bytes.'
+domains:
+- ml-pipeline
+- edge-computing
+provenance:
+  source: GPT-2 Hugging Face implementation profiled via dagprofiler
+  paper_title: GPT-2 Tensor DAG Sharding (measured trace conversion)
+  repo_url: https://github.com/huggingface/transformers
+  extraction_method: trace-conversion
+  extractor: codex-gpt5
+  extraction_date: '2026-02-18'
+  notes: 'Derived from local analysis of Hugging Face GPT-2 code using dagprofiler.
+    DAG implementation repository: https://github.com/ANRGUSC/gpt2-dag. Profiler repository:
+    https://github.com/ANRGUSC/dagprofiler. phase=decode, prompt_len=128, decode_context_len=128,
+    shard_count=12. Prefill and decode are complementary workflows for one request.
+    Run prefill once for the prompt, then run decode for each generation step (up
+    to L_g steps, early stop on EOS). Total latency model used with this pair is:
+    prefill_once + L_g * decode_step. Decode costs here are profiled at avg_kv = L_p
+    + L_g/2 with L_p=128, L_g=128.'
+license:
+  source_license: Apache-2.0
+  dagbench_license: Apache-2.0
+  notes: Workflow representation generated from measured local profiling traces.
+completeness: full
+cost_model: deterministic
+network:
+  included: true
+  topology: fully-connected
+  num_nodes_min: 12
+  num_nodes_max: 12
+graph_stats:
+  num_tasks: 327
+  num_edges: 614
+  depth: 63
+  width: 12
+  ccr: 1537598.404859
+  parallelism: 5.190476
+campaign: campaign_006_gpt2_tensor_trace
+tags:
+- gpt2
+- tensor-parallel
+- sh12
+- dagprofiler
+- trace-conversion
+- gpt2-dag
+- decode

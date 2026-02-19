@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpt2-dag"
+version = "0.1.0"
+description = "DAG-ized GPT-2 tensor-sharded workflow with dagprofiler export tooling."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.5.0",
+  "transformers>=5.1.0",
+  "dagprofiler>=0.1.0",
+  "networkx>=3.3",
+  "pyyaml>=6.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
