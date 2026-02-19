@@ -1,0 +1,29 @@
+name: rpi_cluster_example
+description: Example heterogeneous cluster input for SAGA mapping.
+
+# Node speed is a relative compute factor for task_cost_ms.
+# If task cost is measured in ms, speed=1.0 means baseline runtime.
+# speed=2.0 means approximately 2x faster compute.
+nodes:
+  - name: rpi-a
+    speed: 1.0
+  - name: rpi-b
+    speed: 1.0
+  - name: nuc-1
+    speed: 3.0
+  - name: nuc-2
+    speed: 3.0
+
+# If a link is not listed, default_bandwidth_mbps is used.
+default_bandwidth_mbps: 100
+links:
+  - source: rpi-a
+    target: rpi-b
+    bandwidth_mbps: 50
+  - source: rpi-a
+    target: nuc-1
+    bandwidth_mbps: 200
+  - source: rpi-b
+    target: nuc-2
+    bandwidth_mbps: 200
+

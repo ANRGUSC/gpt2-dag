@@ -21,6 +21,15 @@ These are the core Python files:
 - `src/gpt2_dag/export_dagbench.py`
   - Converts aggregated profiles into DAGBench workflow format (`graph.json` + `metadata.yaml`).
 
+- `src/gpt2_dag/deployment.py`
+  - Deployment planning and mapping:
+    - hand-crafted strategies (`pipeline`, `tensor`)
+    - `saga` strategy using compute-network input + SAGA scheduler
+
+- `src/gpt2_dag/worker_runtime.py`
+  - Worker entrypoint used by deployment plans.
+  - Same code package is shipped to all nodes; task dispatch is driven by plan JSON.
+
 ## DAG Figures
 
 - Layer-level DAG:
@@ -33,4 +42,3 @@ To regenerate:
 ```powershell
 python scripts/render_dag_figures.py
 ```
-

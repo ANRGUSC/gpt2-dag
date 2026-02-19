@@ -15,11 +15,16 @@ def main() -> None:
     p = argparse.ArgumentParser(description="Create a multi-node deployment plan for GPT-2 tensor DAG.")
     p.add_argument("--profile", required=True, help="Path to aggregated profile JSON")
     p.add_argument("--num-nodes", type=int, default=8)
-    p.add_argument("--strategy", choices=["tensor", "pipeline"], default="tensor")
+    p.add_argument("--strategy", choices=["tensor", "pipeline", "saga"], default="tensor")
     p.add_argument("--bandwidth-mbps", type=float, default=100.0)
     p.add_argument("--link-latency-ms", type=float, default=0.2)
+    p.add_argument("--network-file", default=None, help="YAML/JSON compute-network description (required for --strategy saga)")
+    p.add_argument("--scheduler", default="heft", help="SAGA scheduler name for --strategy saga (e.g., heft, cpop, etf, minmin, met, bil)")
     p.add_argument("--out", required=True, help="Output plan JSON path")
     args = p.parse_args()
+
+    if args.strategy == "saga" and not args.network_file:
+        raise ValueError("--network-file is required when --strategy saga")
 
     plan = build_deployment_plan(
         aggregated_profile_json=Path(args.profile),
@@ -27,6 +32,8 @@ def main() -> None:
         strategy=args.strategy,
         bandwidth_mbps=args.bandwidth_mbps,
         link_latency_ms=args.link_latency_ms,
+        network_file=Path(args.network_file) if args.network_file else None,
+        saga_scheduler=args.scheduler,
     )
     save_plan(plan, Path(args.out))
 
@@ -50,4 +57,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

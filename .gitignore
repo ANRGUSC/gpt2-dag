@@ -2,4 +2,4 @@ __pycache__/
 *.pyc
 .pytest_cache/
 pytest-cache-files-*/
-
+artifacts/deployment/

@@ -16,6 +16,10 @@ If you are looking for the actual DAG implementation, start here:
   - defines explicit `dagprofiler` tasks/edges for Sh=12 tensor DAG
 - `src/gpt2_dag/export_dagbench.py`
   - exports measured DAG profiles into DAGBench workflow files
+- `src/gpt2_dag/deployment.py`
+  - deployment mapping (`pipeline`, `tensor`, `saga`)
+- `src/gpt2_dag/worker_runtime.py`
+  - worker entrypoint for per-node execution plans
 
 More detail: `docs/architecture.md`
 
@@ -88,3 +92,49 @@ This outputs:
 - estimated makespan/communication
 
 Deployment details and strategy guide: `docs/deployment.md`
+
+## SAGA-based mapping (network-aware)
+
+You can also generate task-to-node mapping with SAGA, using a compute-network description file.
+
+Pipeline:
+- `gpt2-dag` model/tasks -> `dagprofiler` measured DAG
+- measured DAG + `compute_network_input` -> `SAGA scheduler`
+- output mapping: what task runs on which node, with scheduled start/end times
+
+Example:
+
+```powershell
+python scripts/deploy_plan.py `
+  --profile artifacts/profiles/gpt2_tensor_sh12_decode_aggregated.json `
+  --strategy saga `
+  --network-file docs/examples/compute_network_example.yaml `
+  --scheduler heft `
+  --out artifacts/deployment/decode_saga_heft.json
+```
+
+Supported SAGA schedulers in this repo:
+- `heft` (default)
+- `cpop`
+- `etf`
+- `minmin`
+- `met`
+- `bil`
+
+## What code is shipped to each node?
+
+All nodes run the same code package. The deployment plan provides per-node task lists.
+
+- Shared code shipped to every node:
+  - `src/gpt2_dag/tensor_dag.py`
+  - `src/gpt2_dag/dagprofiler_workflow.py`
+  - `src/gpt2_dag/worker_runtime.py`
+- Node-specific assignment is in plan JSON:
+  - `node_task_order` and `assignment`
+
+Worker dry-run example:
+
+```powershell
+$env:PYTHONPATH = "src"
+python -m gpt2_dag.worker_runtime --plan artifacts/deployment/decode_saga_heft.json --node rpi-a --dry-run
+```
