@@ -7,7 +7,7 @@ https://cdn.openai.com/better-language-models/language_models_are_unsupervised_m
 This repository is based on the Hugging Face GPT-2 implementation:
 https://github.com/huggingface/transformers/blob/main/src/transformers/models/gpt2/modeling_gpt2.py
 
-Tensor-DAG implementation of GPT-2 (Sh=12 shards/layer), with:
+This repo contains a tensor-DAG implementation of GPT-2 (Sh=12 shards/layer), with:
 - exact-functionality parity tests against Hugging Face GPT-2 code
 - measured compute and communication profiling via `dagprofiler`
 - DAGBench workflow export (`prefill` and `decode`)
