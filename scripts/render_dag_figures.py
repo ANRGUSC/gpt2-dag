@@ -64,26 +64,41 @@ def render_layer_schematic(path: Path) -> None:
 
 
 def render_full_overview(path: Path) -> None:
-    width, height = 1720, 300
+    width, height = 2000, 340
     lines = _svg_header(width, height)
     lines.append('<text x="20" y="28" font-size="20" font-family="Arial" font-weight="bold">GPT-2 Tensor DAG (12 Layer Overview)</text>')
-    lines.append(_box(30, 130, 100, 48, "embed", "#f0f0f0"))
-    prev_x, prev_w = 30, 100
+    lines.append(_box(40, 145, 130, 62, "embed", "#f0f0f0"))
+    prev_x, prev_w = 40, 130
+    y = 140
+    h = 74
+    w = 170
 
-    x = 150
-    for i in range(12):
-        lines.append(_box(x, 120, 108, 68, f"L{i:02d}", "#e8eefc"))
-        lines.append(
-            f'<text x="{x + 54}" y="158" font-size="10" text-anchor="middle" font-family="Arial">qkv→12a→am→12m→mm</text>'
-        )
-        lines.append(_arrow(prev_x + prev_w, 154, x, 154))
-        prev_x, prev_w = x, 108
-        x += 116
+    shown_layers = [0, 1, 2, 3]
+    x = 220
+    for i in shown_layers:
+        lines.append(_box(x, y, w, h, f"L{i:02d}", "#e8eefc"))
+        lines.append(f'<text x="{x + w/2}" y="{y + 49}" font-size="12" text-anchor="middle" font-family="Arial">qkv-&gt;12a-&gt;am-&gt;12m-&gt;mm</text>')
+        lines.append(_arrow(prev_x + prev_w, y + h / 2, x, y + h / 2))
+        prev_x, prev_w = x, w
+        x += 200
 
-    lines.append(_box(x, 130, 80, 48, "ln_f", "#f0f0f0"))
-    lines.append(_arrow(prev_x + prev_w, 154, x, 154))
-    lines.append(_box(x + 95, 130, 100, 48, "lm_head", "#f0f0f0"))
-    lines.append(_arrow(x + 80, 154, x + 95, 154))
+    lines.append(_box(x, y + 8, 140, h - 16, "L04..L09", "#fff4d6"))
+    lines.append(f'<text x="{x + 70}" y="{y + 45}" font-size="26" text-anchor="middle" font-family="Arial">...</text>')
+    lines.append(_arrow(prev_x + prev_w, y + h / 2, x, y + h / 2))
+    prev_x, prev_w = x, 140
+    x += 190
+
+    for i in [10, 11]:
+        lines.append(_box(x, y, w, h, f"L{i:02d}", "#e8eefc"))
+        lines.append(f'<text x="{x + w/2}" y="{y + 49}" font-size="12" text-anchor="middle" font-family="Arial">qkv-&gt;12a-&gt;am-&gt;12m-&gt;mm</text>')
+        lines.append(_arrow(prev_x + prev_w, y + h / 2, x, y + h / 2))
+        prev_x, prev_w = x, w
+        x += 200
+
+    lines.append(_box(x, 145, 100, 62, "ln_f", "#f0f0f0"))
+    lines.append(_arrow(prev_x + prev_w, y + h / 2, x, y + h / 2))
+    lines.append(_box(x + 130, 145, 130, 62, "lm_head", "#f0f0f0"))
+    lines.append(_arrow(x + 100, 176, x + 130, 176))
     lines.append("</svg>")
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text("\n".join(lines), encoding="utf-8")
@@ -100,4 +115,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
